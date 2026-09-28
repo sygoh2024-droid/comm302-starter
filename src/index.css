@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .tv-get-started-btn {
+    background: linear-gradient(135deg, #1e53e5 0%, #2962ff 50%, #8739e5 100%);
+    transition: opacity 0.15s ease, transform 0.1s ease;
+  }
+  .tv-get-started-btn:hover {
+    opacity: 0.92;
+  }
+  .tv-get-started-btn:active {
+    transform: scale(0.98);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .tab-active-indicator {
+    position: relative;
+  }
+  .tab-active-indicator::after {
+    content: '';
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #2962ff;
+    border-radius: 2px;
+  }
+}
+
